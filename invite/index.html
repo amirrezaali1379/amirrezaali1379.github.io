@@ -6,11 +6,26 @@
     <title>کارت دعوت مراسم چهلم</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+@font-face {
+  font-family: "Baran";
+  src: url("Baran.ttf") format("truetype");
+
+}
+
+        @font-face {
+  font-family: "IranNastaliq";
+  src:url("IranNastaliq.ttf") format("truetype");
+  
+  
+
+}
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, 'B Nazanin', Verdana, sans-serif;
+            font-family: 'Baran';
+            
+            /* 'Segoe UI', Tahoma, 'B Nazanin', Verdana, sans-serif; */
         }
         
         body {
@@ -57,11 +72,14 @@
         }
         
         h1 {
-            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            font-size: clamp(3.6rem, 10vw, 5rem);
             margin-bottom: 12px;
             color: #f0f0f0;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
             font-weight: 400;
+            font-family: 'IranNastaliq';
+            color: silver;
+            
         }
         
         .header-text {
@@ -340,19 +358,20 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>چهل روز یادآور صبری به سختی سال ها</h1>
+            <h1 >چهل روز یادآور صبری به سختی سال ها</h1>
+            <h1 style="font-size: clamp(1.8rem, 5vw, 2.5rem);">افسانه هستی اش اگر پایاین یافت،خوش نامی و عزتش به پایان نرسید</h1>
             <!-- <p class="header-text">به یادبود عزیز از دست رفته‌ی ما، مرحوم حاج خانم شایسته محمدحسین</p> -->
         </div>
         
         <div class="content">
             <div class="invitation-text">
-                <p>چهلمین روز از روز های تلخ و طاقت فرسای فراق مرحوحه شایسته محمد حسین را به اطلاع تمامی عزیزان می رسانیم</p>
+                <p>چهلمین روز از روز های تلخ و طاقت فرسای فراق مرحومه شایسته محمد حسین را به اطلاع تمامی عزیزان می رسانیم</p>
                 <p>به همین مناسبت از شما دعوت به عمل می آید روز جمعه 1404/6/28 از ساعت 19 الی 22 در تالار تشریفاتی ساعی برای بزرگداشت یاد و خاطره آن عزیز گرد هم آئیم.</p>
             </div>
             
             <div class="guest-name">
                 <h3>حضور</h3>
-                <p>فلان فلانی</p>
+                <p style="font-family: IranNastaliq;font-size: clamp(2.8rem, 7vw, 3rem);">فلان فلانی</p>
                 <h3> موجب تسلی خاطر بازماندگان خواهد بود.</ا>
             </div>
             
@@ -397,9 +416,9 @@
             </div>
         </div>
         
-        <footer>
+        <!-- <footer>
             <p>با تشکر از حضور پر مهر شما، منتظر دیدارتان هستیم</p>
-        </footer>
+        </footer> -->
     </div>
 
     <script>
