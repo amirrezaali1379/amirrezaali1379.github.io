@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کارت دعوت مراسم چهلم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+@font-face {
+  font-family: "Baran";
+  src: url("../Baran.ttf") format("truetype");
+
+}
+
+        @font-face {
+  font-family: "IranNastaliq";
+  src:url("../IranNastaliq.ttf") format("truetype");
+  
+  
+
+}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Baran';
+            
+            /* 'Segoe UI', Tahoma, 'B Nazanin', Verdana, sans-serif; */
+        }
+        
+        body {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.8;
+            padding: 15px;
+            background-image: 
+                radial-gradient(circle at 25% 25%, #2a2a2a 0%, #1a1a1a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: linear-gradient(to bottom, #222222, #1a1a1a);
+            border-radius: 10px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            border: 1px solid #444;
+            margin: 15px;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #111, #222);
+            color: #e0e0e0;
+            text-align: center;
+            padding: 25px 15px;
+            border-bottom: 1px solid #444;
+            position: relative;
+        }
+        
+        .header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #8c8c8c, transparent);
+        }
+        
+        h1 {
+            font-size: clamp(3.6rem, 10vw, 5rem);
+            margin-bottom: 12px;
+            color: #f0f0f0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 400;
+            font-family: 'IranNastaliq';
+            color: silver;
+            
+        }
+        
+        .header-text {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .content {
+            padding: 25px 20px;
+        }
+        
+        .invitation-text {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: clamp(1rem, 3vw, 1.15rem);
+            line-height: 1.9;
+            color: #d0d0d0;
+            padding: 18px;
+            background-color: rgba(40, 40, 40, 0.6);
+            border-radius: 8px;
+            border-right: 3px solid #555;
+        }
+        
+        .guest-name {
+            text-align: center;
+            margin: 25px 0;
+            padding: 18px;
+            background: linear-gradient(to right, #2a2a2a, #333, #2a2a2a);
+            border-radius: 8px;
+            border: 1px solid #555;
+            position: relative;
+        }
+        
+        .guest-name h3 {
+            font-size: clamp(1.1rem, 3.5vw, 1.4rem);
+            color: #c0c0c0;
+            margin-bottom: 10px;
+        }
+        
+        .guest-name p {
+            font-size: clamp(1.4rem, 5vw, 1.8rem);
+            color: #e0e0e0;
+            font-weight: bold;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-bottom: 2px solid #777;
+            display: inline-block;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            border: 1px solid #555;
+            opacity: 0.9;
+        }
+        
+        .details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0;
+            gap: 15px;
+        }
+        
+        .detail-item {
+            flex: 1 1 100%;
+            margin-bottom: 15px;
+            background-color: rgba(35, 35, 35, 0.7);
+            padding: 18px;
+            border-radius: 8px;
+            border-right: 3px solid #666;
+            transition: transform 0.3s ease;
+        }
+        
+        @media (min-width: 600px) {
+            .detail-item {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+        
+        .detail-item:hover {
+            transform: translateY(-5px);
+            background-color: rgba(45, 45, 45, 0.8);
+        }
+        
+        .detail-item h3 {
+            color: #c0c0c0;
+            margin-bottom: 12px;
+            font-size: clamp(1.1rem, 3.5vw, 1.3rem);
+            font-weight: 500;
+            border-bottom: 1px solid #555;
+            padding-bottom: 8px;
+        }
+        
+        .detail-item p {
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+        
+        .detail-item i {
+            margin-left: 8px;
+            color: #999;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+        
+        .location-section {
+            margin: 30px 0;
+            background-color: rgba(40, 40, 40, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            border-right: 3px solid #666;
+        }
+        
+        .location-section h3 {
+            color: #c0c0c0;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: clamp(1.1rem, 3.5vw, 1.3rem);
+            font-weight: 500;
+            border-bottom: 1px solid #555;
+            padding-bottom: 8px;
+        }
+        
+        .location-map {
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            border: 1px solid #555;
+        }
+        
+        .location-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(50%) invert(90%) contrast(85%);
+        }
+        
+        @media (max-width: 600px) {
+            .location-map {
+                height: 250px;
+            }
+        }
+        
+        .location-address {
+            padding: 15px;
+            background-color: rgba(50, 50, 50, 0.5);
+            border-radius: 8px;
+            border: 1px solid #555;
+        }
+        
+        .location-address p {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .location-address i {
+            margin-left: 10px;
+            color: #999;
+        }
+        
+        .prayer {
+            background-color: rgba(30, 30, 40, 0.7);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+            border-right: 3px solid #555;
+            position: relative;
+        }
+        
+        .prayer::before {
+            content: "";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1a1a1a;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #8c8c8c;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+        
+        .prayer h2 {
+            color: #c0c0c0;
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-size: clamp(1.2rem, 4vw, 1.5rem);
+        }
+        
+        .prayer-text {
+            font-size: clamp(0.95rem, 2.8vw, 1.1rem);
+            line-height: 1.9;
+            color: #d0d0d0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, #111, #222);
+            color: #b0b0b0;
+            font-size: clamp(0.85rem, 2.5vw, 1rem);
+            border-top: 1px solid #444;
+        }
+        
+        /* بهبودهای ریسپانسیو برای دستگاه‌های بسیار کوچک */
+        @media (max-width: 480px) {
+            .content {
+                padding: 15px 10px;
+            }
+            
+            .header {
+                padding: 20px 10px;
+            }
+            
+            .invitation-text, .guest-name, .detail-item, .prayer, .location-section {
+                padding: 15px;
+            }
+            
+            .details {
+                gap: 10px;
+            }
+            
+            .detail-item p, .location-address p {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .detail-item i, .location-address i {
+                margin: 5px 0;
+                margin-left: 0;
+            }
+            
+            .location-map {
+                height: 200px;
+            }
+        }
+        
+        /* بهبود برای حالت landscape در موبایل */
+        @media (max-height: 500px) and (orientation: landscape) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                max-height: 95vh;
+                overflow-y: auto;
+            }
+            
+            .location-map {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+           
+            <h1 >چهل روز یادآور صبری به سختی سال ها</h1>
+            <h1 style="font-size: clamp(1.8rem, 5vw, 2.5rem);">افسانه هستی اش اگر پایاین یافت،خوش نامی و عزتش به پایان نرسید</h1>
+            <!-- <p class="header-text">به یادبود عزیز از دست رفته‌ی ما، مرحوم حاج خانم شایسته محمدحسین</p> -->
+        </div>
+        
+        <div class="content">
+            <div class="invitation-text">
+                <p>چهلمین روز از روز های تلخ و طاقت فرسای فراق مرحومه شایسته محمد حسین را به اطلاع تمامی عزیزان می رسانیم.</p>
+                <p>به همین مناسبت از شما دعوت به عمل می آید روز جمعه ۱۴۰۴/۰۶/۲۸ از ساعت ۱۹ الی ۲۲ در تالار تشریفاتی ساعی برای بزرگداشت یاد و خاطره آن عزیز گرد هم آئیم.</p>
+                <img src="../Candle.jpg" style="width:20%;max-width:100%; height:auto;mix-blend-mode: lighten;position: absolute;z-index: 1000000" alt="">
+            </div>
+            
+            <div class="guest-name">
+                <h3>حضور</h3>
+                <p style="font-family: IranNastaliq;font-size: clamp(2.8rem, 7vw, 3rem);">سرکار علیه خانم محمد حسین و زهرای عزیز
+</p>
+                <h3> موجب تسلی خاطر بازماندگان خواهد بود.</h3>
+            </div>
+            
+            <!-- <div class="image-container">
+                <img src="maman.jpeg" alt="عکس مراسم چهلم">
+            </div> -->
+            
+            <div class="details">
+                <!-- <div class="detail-item">
+                    <h3>تاریخ و زمان مراسم</h3>
+                    <p><i class="fas fa-calendar-days"></i> تاریخ: جمعه 1404/06/28</p>
+                    <p><i class="fas fa-clock"></i> زمان: ساعت 19 الی 22</p>
+                    
+                </div> -->
+                
+                <div class="detail-item">
+                    <h3>آدرس</h3>
+                    <p><i class="fas fa-location-dot"></i> تالار تشریفاتی ساعی</p>
+                    <p><i class="fas fa-map"></i> تهران، خیابان ولیعصر، بالاتر از پارک ساعی، نبش ساعی دوم(دسترسی از ساعی یکم)</p>
+                </div>
+            </div> 
+            
+            <div class="location-section">
+                <h3>لوکیشن و مسیر دسترسی</h3>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.4634903371234!2d51.409590099999996!3d35.7394111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e075f792c0c8f%3A0x9b9ff4e02871d459!2sSaei%20hall!5e0!3m2!1sen!2s!4v1756736990785!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="location-address">
+                    
+                    <p><i class="fas fa-car"></i> تالار دارای پارکینگ اختصاصی میباشد.</p>
+                    
+                </div>
+            </div>
+            
+            <div class="prayer">
+                <h2>دعای ویژه</h2>
+                <p class="prayer-text">
+                    خدایا، به حق محمد و آل محمد، برای این مرحوم رحمت و مغفرت قرار ده و او را در جوار رحمت خودت بپذیر.
+                    خدایا، به بازماندگان صبر عطا فرما و به همه ما توفیق عمل صالح مرحمت نما.
+                    اللهم اغفر له و ارحمه و عافه و اعف عنه و اکرم نزله و وسع مدخله و اغسله بالماء و الثلج و البرد.
+                </p>
+            </div>
+        </div>
+        
+        <!-- <footer>
+            <p>با تشکر از حضور پر مهر شما، منتظر دیدارتان هستیم</p>
+        </footer> -->
+    </div>
+
+    
+</body>
+</html>
