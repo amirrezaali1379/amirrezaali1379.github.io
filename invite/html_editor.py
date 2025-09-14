@@ -8,7 +8,7 @@ def change_text(current_text,new_text,file_name,id):
         file.write(html2)
 
 import os
-id='16'
+id='18'
 folder_path = f"invite/{id}"  # مسیر پوشه‌ات
 
 files = os.listdir(folder_path)
